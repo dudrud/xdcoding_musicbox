@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직박스 - 튜토리얼2</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/tuto.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function(){
+      
+      $('.btn-next').on('click',goNext);
+      function goNext(){
+        location.href = 'tutorial3.html';
+      }
+
+      $('.btn-prev').on('click',goPrev);
+      function goPrev(){
+        history.go(-1);
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="hide">뮤직 박스</h1>
+    </header>
+    <section>
+      <div class="cont tac">
+        <h2>Second Step</h2>
+        <div class="desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </div>
+      </div>
+      <div class="loc tac">
+        <img src="img/tuto-2.svg" alt="이미지">
+        <ul>
+          <li>01</li>
+          <li class="act">02</li>
+          <li>03</li>
+        </ul>
+      </div>
+      <div class="btns">
+        <button class="btn-prev"><img src="img/ic-next.svg" alt="이전으로 가기"> Prev </button>
+        <button class="btn-next">Next <img src="img/ic-next.svg" alt="다름으로 가기"></button>
+      </div>
+    </section>
+    <footer>
+      <p class="hide">copyright &copy; MUSIC BOX since 2021.9</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직박스 - 메인</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contents.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="https://raw.githubusercontent.com/tobia/Pause/master/jquery.pause.js"></script>
+  <script src="js/mpaly.js"></script>
+  <script src="js/share.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="tac">MUSICBOX</h1>
+      <button class="btn-menu"><img src="img/ic-menu.svg" alt="전체메뉴보기"></button>
+      <nav id="gnb">
+        <ul>
+          <li><a href="main.html">홈</a></li>
+          <li><a href="#">내정보</a></li>
+          <li><a href="#">플레이 리스트</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2 class="hide">앨범 상세보기</h2>
+      <div class="detail">
+        <img src="img/hit-2.png" alt="앨범1">
+        <div class="txtBox">
+          <p class="a-name">Artist</p>
+          <p class="a-tit">TITLE SONG</p>
+          <p class="a-name2">First Album</p>
+        </div>
+        <button class="btn-share"><img src="img3/share.svg" alt="공유하기"></button>
+        <button class="btn-vol"><img src="img3/baseline-equalizer-24px.svg" alt="음향조절"></button>
+      </div>
+    </section>
+    <section>
+      <h2>Top 10</h2>
+      <div class="wrap">
+        <ul class="top_list">
+          <li><a href="#">
+              <div class="img_box"><img src="img/top-1.png" alt="앨범1"></div>
+              <div class="txt_box">
+                <p class="a-name">Artist</p>
+                <p class="a-tit">TITLE SONG</p>
+              </div>
+            </a>
+          </li>
+          <li><a href="#">
+              <div class="img_box"><img src="img/top-2.png" alt="앨범2"></div>
+              <div class="txt_box">
+                <p class="a-name">Artist</p>
+                <p class="a-tit">TITLE SONG</p>
+              </div>
+            </a>
+          </li>
+          <li><a href="#">
+              <div class="img_box"><img src="img/top-3.png" alt="앨범3"></div>
+              <div class="txt_box">
+                <p class="a-name">Artist</p>
+                <p class="a-tit">TITLE SONG</p>
+              </div>
+            </a>
+          </li>
+          <li><a href="#">
+              <div class="img_box"><img src="img/top-4.png" alt="앨범4"></div>
+              <div class="txt_box">
+                <p class="a-name">Artist</p>
+                <p class="a-tit">TITLE SONG</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="music-controls">
+      <div class="progress">
+        <div class="progressbar"></div>
+        <ul>
+          <li><button class="btn_rewind"><img src="img3/fast_rewind.svg" alt="빨리감기"></button></li>
+          <li><button class="btn_skip"><img src="img3/baseline-skip_previous-24px.svg" alt="뒤로가기"></button></li>
+          <li><button class="btn_pause"><img src="img3/pause.svg" alt="일시정지"></button></li>
+          <li><button class="btn_next"><img src="img3/skip_next.svg" alt="앞으로가기"></button></li>
+          <li><button class="btn_forward"><img src="img3/fast_forward.svg" alt="건너뛰기"></button></li>
+          <li><button class="btn_equalizer"><img src="img3/baseline-equalizer-24px-1.svg" alt="음향조절"></button></li>
+        </ul>
+      </div>
+    </div>
+    <nav id="tab">
+      <ul>
+        <li><a href="main.html"><img src="img/ic-music1.svg" alt="재생목록"></a></li>
+        <li><a href="#"><img src="img/ic-music2.svg" alt="음악듣기"></a></li>
+        <li><a href="#"><img src="img/ic-music3.svg" alt="관심목록"></a></li>
+        <li><a href="#"><img src="img/ic-music4.svg" alt="베스트"></a></li>
+      </ul>
+    </nav>
+    <div id="friend-list" class="modal">
+      <div class="list-wrap">
+        <button class="close"><img src="img3/x.svg" alt="닫기"></button>
+        <form><label for="search">
+          <input type="text" id="search"></label>
+          <button type="button" class="search" ><img src="img3/search.svg" alt="검색"></button>
+        </form>
+        <div id="fr-ul">
+  
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="hide">copyright &copy; MUSIC BOX since 2021.9</p>
+    </footer>
+  </div>
+</body>
+
+</html>

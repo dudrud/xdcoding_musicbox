@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직박스 - 메인</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.hit-slides').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows: false
+      });
+
+    });
+  </script>
+  <style>
+    .hit-slides img {
+      width: 100%;
+    }
+
+    .slick-slide {
+      padding: 15px;
+    }
+
+    .slick-center {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="tac">MUSICBOX</h1>
+      <button class="btn-menu"><img src="img/ic-menu.svg" alt="전체메뉴보기"></button>
+      <nav id="gnb">
+        <ul>
+          <li><a href="#">내정보</a></li>
+          <li><a href="#">플레이 리스트</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Hit</h2>
+      <!-- 슬릭 플러그인 사용 http://kenwheeler.github.io/slick/ -->
+      <div class="hit-slides">
+        <div><a href="content1.html
+          "><img src="img/hit-1.png" alt=""></a></div>
+        <div><a href="content2.html
+          "><img src="img/hit-2.png" alt=""></a></div>
+        <div><a href="content3.html
+          "><img src="img/hit-3.png" alt=""></a></div>
+        <div><a href="content4.html
+          "><img src="img/hit-4.png" alt=""></a></div>
+      </div>
+    </section>
+    <section>
+      <h2>Top 10</h2>
+      <ul class="top_list">
+        <li><a href="#">
+            <div class="img_box"><img src="img/top-1.png" alt="앨범1"></div>
+            <div class="txt_box">
+              <p class="a-name">Artist</p>
+              <p class="a-tit">TITLE SONG</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="#">
+            <div class="img_box"><img src="img/top-2.png" alt="앨범2"></div>
+            <div class="txt_box">
+              <p class="a-name">Artist</p>
+              <p class="a-tit">TITLE SONG</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="#">
+            <div class="img_box"><img src="img/top-3.png" alt="앨범3"></div>
+            <div class="txt_box">
+              <p class="a-name">Artist</p>
+              <p class="a-tit">TITLE SONG</p>
+            </div>
+          </a>
+        </li>
+        <li><a href="#">
+            <div class="img_box"><img src="img/top-4.png" alt="앨범4"></div>
+            <div class="txt_box">
+              <p class="a-name">Artist</p>
+              <p class="a-tit">TITLE SONG</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <nav id="tab">
+      <ul>
+        <li><a href="#"><img src="img/ic-music1.svg" alt="재생목록"></a></li>
+        <li><a href="#"><img src="img/ic-music2.svg" alt="음악듣기"></a></li>
+        <li><a href="#"><img src="img/ic-music3.svg" alt="관심목록"></a></li>
+        <li><a href="#"><img src="img/ic-music4.svg" alt="베스트"></a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p class="hide">copyright &copy; MUSIC BOX since 2021.9</p>
+    </footer>
+  </div>
+</body>
+
+</html>

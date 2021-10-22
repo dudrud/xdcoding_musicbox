@@ -1,0 +1,224 @@
+#wrap{
+  overflow: hidden;
+  position: relative;
+}
+.detail {
+  position: relative;
+  height: 300px;
+}
+
+.detail img {
+  width: 100%;
+}
+
+.detail .txtBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  padding-top: 220px;
+  box-sizing: border-box;
+}
+
+.detail .txtBox p {
+  padding-left: 15px;
+}
+
+.detail .txtBox .a-name {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.detail .txtBox .a-tit {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.detail .txtBox .a-name2 {
+  font-size: 11px;
+}
+
+.detail button {
+  position: absolute;
+  right: 15px;
+  background: transparent;
+  border: transparent;
+}
+
+.btn-share {
+  top: 14px;
+}
+
+.btn-vol {
+  bottom: 11px
+}
+
+/* css로 슬릭기능 만들기(wrap으로 html에서 감싼 후 ) */
+.wrap {
+  overflow: auto;
+}
+
+.top_list {
+  width: 180%;
+}
+
+.top_list li {
+  width: 22%;
+}
+
+.top_list img {
+  width: 100%;
+}
+
+section h2 {
+  padding-top: 47px;
+}
+
+.music-controls {
+  position: fixed;
+  bottom: 83px;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  background: #D1B8CB 0% 0% no-repeat padding-box;
+  opacity: 0.85;
+}
+
+.progress {
+  top: 671px;
+  left: 68px;
+  width: 240px;
+  height: 4px;
+  background: #E2D4DF 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  opacity: 1;
+  margin: 20px auto;
+}
+
+.progressbar {
+  top: 671px;
+  left: 68px;
+  width: 20px;
+  height: 6px;
+  background: #A71184 0% 0% no-repeat padding-box;
+  border-radius: 18px;
+  opacity: 1;
+  margin-top: -1px;
+  /* css로 animation주기 */
+  /* animation-duration: 60s;
+  animation-name: Mplay;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; */
+}
+
+.music-controls ul {
+  display: flex;
+  justify-content: center; 
+  min-width: 375px; margin: auto;
+  position: relative;
+}
+
+.music-controls ul button {
+  background: transparent;
+  border: transparent;
+  padding-top: 20px;
+}
+
+.music-controls ul li:last-child {
+  position: absolute;
+  right: 0;
+
+}
+
+/* css로 animation주기 */
+/* @keyframes Mplay{
+  0%{
+    width: 20px;
+  }
+  100%{
+    width: 100%;
+  }
+} */
+#friend-list {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+}
+
+#friend-list .list-wrap {
+  background-color: #fff;
+  width: 77%;
+  margin-left: auto;
+}
+
+#friend-list button {
+  background-color: transparent;
+  border: transparent;
+}
+
+#friend-list button.close {
+  float: right;
+  padding: 11px;
+}
+
+#friend-list button.search {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+#friend-list form {
+  clear: both;
+  width: 225px;
+  margin: auto;
+  position: relative;
+  padding: 5px;
+}
+
+#friend-list form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #F5EEF3 0% 0% no-repeat padding-box;
+  border: 1px solid #B5B5B5;
+  margin-bottom: 20px;
+}
+#friend-list ul {
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+}
+#friend-list ul a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#friend-list ul li {
+  padding: 12px 16px;
+}
+
+#friend-list ul li img {
+width: 56px;
+height: 56px;
+padding-right: 14px;
+}
+
+#friend-list .mess .fr-name {
+  color: #888888;
+  font:  600 16px;
+  padding-bottom: 6px;
+}
+
+#friend-list .mess .fr-comm {
+  height:2em;
+  overflow: hidden;
+  color: #A7A7A7;
+  font-size: 14px; line-height: 15px;
+}

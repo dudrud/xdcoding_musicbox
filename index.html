@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직박스 - 시작(landing)</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/landing.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function(){
+    setInterval(goNext,5000);
+    $('button').on('click',goNext);
+    function goNext(){
+      location.href = 'tutorial1.html';
+    }
+  });
+</script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="tac"><img src="img/ms.svg" alt="music box"></h1>
+    </header>
+    <section>
+      <h2 class="hide">start 버튼을 클릭하거나 5초 뒤에 다음 페이지로 이동합니다. </h2>
+      <p class="tac"><button>Start</button></p>
+    </section>
+    <footer>
+      <p class="hide">copyright &copy; MUSIC BOX since 2021.9</p>
+    </footer>
+  </div>
+</body>
+</html>

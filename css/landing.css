@@ -1,0 +1,22 @@
+#wrap{
+  background: #000 radial-gradient(closest-side at 50% 37%, #6E185A 0%, #1A0113 100%) 0% 0% no-repeat padding-box;
+  min-height:100vh;
+}
+h1{
+  padding-top: 270px;
+}
+section p{
+  /* margin-top: 304px; */
+  position: absolute; width: 100%;
+  left: 0;
+  bottom: 60px;
+}
+section p button{
+  width: 200px;
+  height: 56px;
+  background: #FFCD06;
+  border: 1px solid #707070;
+  border-radius: 28px;
+  color: #DD00FF;
+  font-size: 24px;
+}

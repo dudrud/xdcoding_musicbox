@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>뮤직박스 - 친구와 대화</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/chat.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/chat.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1 class="tac">Nancy</h1>
+      <button class="btn-back"><img src="img5/ic-back.svg" alt="뒤로가기"></button>
+    </header>
+    <section>
+      <h2 class="hide">친구와 대화</h2>
+      <ul class="chat-list">
+        <li class="you">
+          <img src="img4/fr1.png" alt="Nancy">
+          <p>In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augues.
+          </p>
+        </li>
+        <li class="me">
+          <p> Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit
+            amet lectus non tristique.</p>
+        </li>
+        <li class="you">
+          <img src="img4/fr1.png" alt="Nancy">
+          <p>In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus.</p>
+        </li>
+        <li class="me">
+          <p>OK</p>
+        </li>
+        <li class="you">
+          <img src="img4/fr1.png" alt="Nancy">
+          <p>In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue.
+            Proin tempus urna vel congue e sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus
+            facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae,
+            finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio
+            efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
+        </li>
+        <li class="me">
+          <p>Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit
+            amet lectus non tristique. </p>
+        </li>
+      </ul>
+      <div id="add">
+        <div class="in-add">
+          <button class="btn-add"><img src="img5/btn-float-act.svg" alt="친구초대"></button>
+          <ul>
+            <li><a href="#"><img src="img4/fr2.png" alt="친구2"></a></li>
+            <li><a href="#"><img src="img4/fr3.png" alt="친구3"></a></li>
+            <li><a href="#"><img src="img4/fr4.png" alt="친구4"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="input">
+        <form>
+          <label for="message" class="hide">메시지 입력</label>
+          <input type="text" id="message" name="mymessage">
+          <button class="btn-mic" type="button"><img src="img5/ic-mic.svg" alt="음성입력"></button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p class="hide">copyright &copy; MUSIC BOX since 2021.9</p>
+    </footer>
+  </div>
+</body>
+
+</html>
